@@ -208,6 +208,7 @@ int main(void)
 				  }
 			  }
 		  }
+		  buttons[10].pressStartTime = 0;
 	  }
   }
 }
