@@ -271,9 +271,9 @@ void unlockDoor(void) {
 void alertWrongPassword(void) {
     HAL_GPIO_WritePin(OUTPUT_PORT, BUZZER_PIN, GPIO_PIN_SET);  // Activate buzzer
     HD44780_Clear();
-    HAL_Delay(1000);
     HD44780_PrintStr("Wrong Password");
     HAL_GPIO_WritePin(OUTPUT_PORT, BUZZER_PIN, GPIO_PIN_RESET);  // Deactivate buzzer
+    HAL_Delay(1000);
     HD44780_Clear();
     HD44780_PrintStr("Enter Password");
 }
